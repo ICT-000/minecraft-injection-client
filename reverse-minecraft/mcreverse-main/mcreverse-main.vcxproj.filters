@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="cheat">
+      <UniqueIdentifier>{ae26ba3a-cd93-498a-b91f-9ba8040ba21e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk">
+      <UniqueIdentifier>{473013ed-ff93-4868-807e-839bdafba4cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\utils">
+      <UniqueIdentifier>{92e63ca8-f42a-47b3-894d-e42b791983ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\features">
+      <UniqueIdentifier>{c016cd31-9890-4d8b-91e3-4b05d8f507e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\hooks">
+      <UniqueIdentifier>{25c5703a-14de-4ea0-b020-bfdfed3972c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\hooks\game_render">
+      <UniqueIdentifier>{05becb38-fa0f-4a49-beb3-11b965585d3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\structs">
+      <UniqueIdentifier>{68e8f2c8-f44d-4f3a-be42-eb395655c2c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\structs\source">
+      <UniqueIdentifier>{69e559e2-86b1-4478-8c4d-ca5a630657a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\utils\math">
+      <UniqueIdentifier>{f6e2ae8e-52b5-49e8-aa6c-99d48393fcf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\hooks\anti-analyzer">
+      <UniqueIdentifier>{e3a9a8e9-fd53-489f-956f-a951600f2d3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\min_hook">
+      <UniqueIdentifier>{0cfbc76d-c162-480b-8411-36b188978ac0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\min_hook\hde">
+      <UniqueIdentifier>{8e984215-5722-4b80-bb47-94cb99a49731}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\structs\header">
+      <UniqueIdentifier>{16fb2c8c-2299-4d71-9217-dc4ad28f72f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\features\movement">
+      <UniqueIdentifier>{5faf9a39-cd64-476f-bda4-69048e0e50f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\features\legit">
+      <UniqueIdentifier>{bfa66296-d70c-4a4d-b076-ec046691ad86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\features\rage">
+      <UniqueIdentifier>{7ac0ddf0-24ef-4805-a1f0-038766e272f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\features\visuals">
+      <UniqueIdentifier>{d32d9a53-fc21-433e-9c93-50b6a0e92dbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\menu">
+      <UniqueIdentifier>{5f39c168-e92d-42d3-9209-587935287753}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="c_minecraft.cpp">
+      <Filter>cheat</Filter>
+    </ClCompile>
+    <ClCompile Include="open_gl.cpp">
+      <Filter>cheat\hooks\game_render</Filter>
+    </ClCompile>
+    <ClCompile Include="vec.cpp">
+      <Filter>sdk\structs\source</Filter>
+    </ClCompile>
+    <ClCompile Include="math.cpp">
+      <Filter>sdk\utils\math</Filter>
+    </ClCompile>
+    <ClCompile Include="open_process.cpp">
+      <Filter>cheat\hooks\anti-analyzer</Filter>
+    </ClCompile>
+    <ClCompile Include="buffer.c">
+      <Filter>sdk\min_hook</Filter>
+    </ClCompile>
+    <ClCompile Include="hook.c">
+      <Filter>sdk\min_hook</Filter>
+    </ClCompile>
+    <ClCompile Include="trampoline.c">
+      <Filter>sdk\min_hook</Filter>
+    </ClCompile>
+    <ClCompile Include="hde64.c">
+      <Filter>sdk\min_hook\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="hde32.c">
+      <Filter>sdk\min_hook\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="c_gltext.cpp">
+      <Filter>cheat\hooks\game_render</Filter>
+    </ClCompile>
+    <ClCompile Include="entry.cpp" />
+    <ClCompile Include="sdk.cpp">
+      <Filter>sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="c_entity.cpp">
+      <Filter>sdk\structs\source</Filter>
+    </ClCompile>
+    <ClCompile Include="c_world.cpp">
+      <Filter>sdk\structs\source</Filter>
+    </ClCompile>
+    <ClCompile Include="c_movement.cpp">
+      <Filter>cheat\features\movement</Filter>
+    </ClCompile>
+    <ClCompile Include="c_glrender.cpp">
+      <Filter>cheat\hooks\game_render</Filter>
+    </ClCompile>
+    <ClCompile Include="c_legit.cpp">
+      <Filter>cheat\features\legit</Filter>
+    </ClCompile>
+    <ClCompile Include="c_visuals.cpp">
+      <Filter>cheat\features\visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="create_remote_thread.cpp">
+      <Filter>cheat\hooks\anti-analyzer</Filter>
+    </ClCompile>
+    <ClCompile Include="enum_process_modules.cpp">
+      <Filter>cheat\hooks\anti-analyzer</Filter>
+    </ClCompile>
+    <ClCompile Include="c_esp.cpp">
+      <Filter>cheat\features\visuals</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="includes.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="singleton.h">
+      <Filter>sdk\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="c_minecraft.h">
+      <Filter>cheat</Filter>
+    </ClInclude>
+    <ClInclude Include="vec.h">
+      <Filter>sdk\structs\header</Filter>
+    </ClInclude>
+    <ClInclude Include="c_gameinstance.h">
+      <Filter>sdk\structs\header</Filter>
+    </ClInclude>
+    <ClInclude Include="c_entity.h">
+      <Filter>sdk\structs\header</Filter>
+    </ClInclude>
+    <ClInclude Include="c_world.h">
+      <Filter>sdk\structs\header</Filter>
+    </ClInclude>
+    <ClInclude Include="c_javaset.h">
+      <Filter>sdk\structs\header</Filter>
+    </ClInclude>
+    <ClInclude Include="math.h">
+      <Filter>sdk\utils\math</Filter>
+    </ClInclude>
+    <ClInclude Include="c_gui.h">
+      <Filter>sdk\structs\header</Filter>
+    </ClInclude>
+    <ClInclude Include="xor.h">
+      <Filter>sdk\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="buffer.h">
+      <Filter>sdk\min_hook</Filter>
+    </ClInclude>
+    <ClInclude Include="trampoline.h">
+      <Filter>sdk\min_hook</Filter>
+    </ClInclude>
+    <ClInclude Include="hde32.h">
+      <Filter>sdk\min_hook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="hde64.h">
+      <Filter>sdk\min_hook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="pstdint.h">
+      <Filter>sdk\min_hook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="table32.h">
+      <Filter>sdk\min_hook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="table64.h">
+      <Filter>sdk\min_hook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHook.h">
+      <Filter>sdk\min_hook</Filter>
+    </ClInclude>
+    <ClInclude Include="c_gltext.h">
+      <Filter>cheat\hooks\game_render</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="c_movement.h">
+      <Filter>cheat\features\movement</Filter>
+    </ClInclude>
+    <ClInclude Include="c_glrender.h">
+      <Filter>cheat\hooks\game_render</Filter>
+    </ClInclude>
+    <ClInclude Include="c_legit.h">
+      <Filter>cheat\features\legit</Filter>
+    </ClInclude>
+    <ClInclude Include="c_visuals.h">
+      <Filter>cheat\features\visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="c_esp.h">
+      <Filter>cheat\features\visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="c_rendermanager.h">
+      <Filter>sdk\structs\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
